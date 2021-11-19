@@ -1,0 +1,35 @@
+@import "index.scss";
+@import "_partials.scss";
+@import "pizze.scss";
+
+.menu-simple {
+  @include menuSimple;
+}
+
+.news {
+  margin-top: 150px;
+
+  header {
+    .titolo-main {
+      margin-top: 0;
+      animation: pizzaTitleAppear 0.5s;
+    }
+  }
+
+  .news-content {
+    animation: immaginiAppear 1.5s;
+
+    article {
+      margin: 40px 20px;
+      header {
+        h4 {
+          font-size: 35px;
+        }
+      }
+
+      p {
+        @include fontSizeContent;
+      }
+    }
+  }
+}

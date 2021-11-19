@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Titolo -->
+    <title> Pizzeria da Mario </title>
+    <!-- Indica il set di caratteri che verrà utilizzato -->
+    <meta charset="UTF-8">
+    <!-- Parole chiavi -->
+    <meta name="keywords" content="HTML,Pizzeria,Pizza,Mario">
+    <!-- Descrizione -->
+    <meta name="description" content="Sito della pizzeria da Mario a Roma">
+    <!-- Autore del Documento -->
+    <meta name="author" content="Giorgio Piccardo">
+
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/DA MARIO logo - quadrato.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Barra di Navigazione -->
+
+    <nav class="menu menu-simple">
+      <ul class="menu-ul">
+        <li class="logo"><a href="index.html"><img src="img/DA MARIO logo.svg" alt="logo"></a></li>
+      </ul>
+
+      <ul class="menu-ul">
+      <li class="menu-li"><a class="menu-filosofia" href='filosofia.html'> LA NOSTRA FILOSOFIA</a></li>
+      <li class="menu-li"><a class="menu-pizze" href='pizze.html'> LE NOSTRE PIZZE</a></li>
+      <li class="menu-li"><a class="menu-news" href='news.html'> NEWS</a></li>
+      <li class="menu-li"><a class="menu-contatti" href='#footer'> CONTATTI</a></li>
+      <li class="menu-li"><a class="menu-faidate" href='faidate'> FAI DA TE!</a></li>
+    </ul></nav>
+
+
+    <section class='news'>
+      <header>
+        <h3 class="titolo titolo-main">News</h3>
+      </header>
+
+      <div class="news-content">
+      <article>
+        <header>
+          <h4 class="newsh">Chiusura Estiva</h4>
+        </header>
+        <p>
+          La pizzeria rimarrà chiusa dal
+          <time datetime="2018-07-07">7 Luglio</time>
+          al
+          <time datetime="2018-07-22">22 Luglio</time>
+          per ferie
+        </p>
+      </article>
+      <article>
+        <header>
+          <h4 class="newsh">Promozione Pizza a metà</h4>
+        </header>
+        <p>Ogni Lunedì se vieni in coppia pagherai due pizze al prezzo di una!</p>
+      </article>
+    </div>
+
+    </section>
+
+    <!-- Footer -->
+   <footer id="footer">
+
+     <div class="footer-container">
+       <section class='orari'>
+         <header>
+           <h3 class="titolo">Orari di Apertura</h3>
+         </header>
+
+         <!-- Lista non Ordinata -->
+         <ul class="orari-ul">
+           <li> Mar - Gio: <time>19:00</time> - <time>00:00</time></li>
+           <li> Ven - Sab - Dom: <time>19:00</time> - <time>02:00</time></li>
+           <li> Lunedi Riposo</li>
+         </ul>
+       </section>
+
+
+
+       <section class='indirizzo'>
+         <header>
+           <h3 class="titolo">Dove Siamo</h3>
+         </header>
+         <!-- Indirizzo -->
+         <address>
+           Via del Rosso, 45<br>
+           Roma 00001<br>
+           tel. 0606060606<br>
+           <!-- mailto si utilizza per inviare le mail -->
+           <a href="mailto:indirizzo@email.com">pizzeriadamario@email.com</a>
+         </address>
+       </section>
+
+     </div>
+
+      <small>©2021 HTML by <a href="https://giorgiopiccardo.com/">Giorgio Piccardo</a>
+         & CSS by
+         <a href="#">Olga Senakosava</a> &
+         icons by <a href="https://thenounproject.com/grega.cresnar/">Gregor Cresnar</a></small>
+    </footer>
+
+  </body>
+</html>

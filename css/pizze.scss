@@ -1,0 +1,82 @@
+@import 'index.scss';
+@import 'filosofia.scss';
+
+.menu-simple {
+  @include menuSimple;
+}
+
+.galleria {
+  margin-top: 150px;
+
+  header {
+    .titolo {
+      @include fontSizeTitle;
+      text-align: center;
+      animation: pizzaTitleAppear 0.5s;
+
+      @keyframes pizzaTitleAppear {
+        from {
+          opacity: 0;
+          margin-top: -80px;
+        }
+
+        to {
+          opacity: 1;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .immagini {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+
+    figure {
+
+      .imgpizza {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+
+      }
+
+      figcaption {
+        @include fontSizeContent;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .pizza1 {
+      animation: immaginiAppear 0.5s;
+    }
+
+    .pizza2 {
+      animation: immaginiAppear 1s;
+    }
+
+    .pizza3 {
+      animation: immaginiAppear 1.5s;
+    }
+
+
+
+    @keyframes immaginiAppear {
+      from {
+        opacity: 0;
+        margin-top: 200px;
+      }
+
+      to {
+        opacity: 1;
+        margin-top: 0;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Titolo -->
+  <title> Pizzeria da Mario </title>
+  <!-- Indica il set di caratteri che verrà utilizzato -->
+  <meta charset="UTF-8">
+  <!-- Parole chiavi -->
+  <meta name="keywords" content="HTML,Pizzeria,Pizza,Mario">
+  <!-- Descrizione -->
+  <meta name="description" content="Sito della pizzeria da Mario a Roma">
+  <!-- Autore del Documento -->
+  <meta name="author" content="Giorgio Piccardo">
+
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link rel="shortcut icon" type="image/jpg" href="img/DA MARIO logo - quadrato.svg">
+
+  <link rel="stylesheet" href="fonts/Cairo/static/Cairo-VariableFont_wght.ttf">
+</head>
+<body>
+
+  <!-- Barra di Navigazione -->
+
+  <nav class="menu">
+    <ul class="menu-ul">
+      <li class="logo"><a href="index.html"><img src="img/DA MARIO logo.svg" alt="logo"></a></li>
+    </ul>
+
+    <ul class="menu-ul">
+    <li class="menu-li"><a class="menu-filosofia" href='filosofia.html'> LA NOSTRA FILOSOFIA</a></li>
+    <li class="menu-li"><a class="menu-pizze" href='pizze.html'> LE NOSTRE PIZZE</a></li>
+    <li class="menu-li"><a class="menu-news" href='news.html'> NEWS</a></li>
+    <li class="menu-li"><a class="menu-contatti" href='#footer'> CONTATTI</a></li>
+    <li class="menu-li"><a class="menu-faidate" href='faidate'> FAI DA TE!</a></li>
+  </ul></nav>
+
+  <!-- Titoli e Cover -->
+
+  <header class="cover">
+    <img class="header-img" src="img/pizzeria.jpg" alt='forno' />
+    <h2>La migliore pizza a Roma</h2>
+    <button type="button" name="button"><a class="pizze-button" href="pizze.html" title="Vedi le pizze">Vedi le pizze</a></button>
+  </header>
+
+
+  <!-- News -->
+  <section class='news'>
+    <header>
+      <h3 class="titolo">News</h3>
+    </header>
+
+    <div class="news-articles">
+    <article class="news-item">
+      <header>
+        <h4>Chiusura Estiva</h4>
+      </header>
+      <p class="news-content">
+        La pizzeria rimarrà chiusa dal
+        <time datetime="2018-07-07">7 Luglio</time>
+        al
+        <time datetime="2018-07-22">22 Luglio</time>
+        per ferie
+      </p>
+    </article>
+    <article class="news-item">
+      <header>
+        <h4>Promozione - "Pizza a metà"</h4>
+      </header>
+      <p class="news-content">Ogni Lunedì se vieni in coppia pagherai due pizze al prezzo di una!</p>
+    </article>
+  </div>
+
+  <div class="news-all">
+    <button type="button" name="button"><a href="news.html">Tutte le News</a></button>
+  </div>
+
+  </section>
+
+  <section class='pizze'>
+    <header>
+      <h3>Le nostre pizze</h3>
+    </header>
+
+<div class="immagini">
+    <figure>
+      <a href="pizze.html"><img class="imgpizza" src='img/pizza1.jpg' alt='pizza 1'></img>
+      <figcaption>
+        Margherita
+      </figcaption>
+      </a>
+    </figure>
+
+    <figure>
+      <a href="pizze.html"><img class="imgpizza" src='img/pizza2.jpg' alt='pizza 2'></img>
+      <figcaption>
+        Pizza + Birra
+      </figcaption>
+    </a>
+    </figure>
+
+    <figure>
+      <a href="pizze.html"><img class="imgpizza" src='img/pizza3.jpg' alt='pizza 3'></img>
+      <figcaption>
+        Cacio e Pepe
+      </figcaption>
+      </a>
+    </figure>
+</div>
+  </section>
+
+
+  <!-- Footer -->
+ <footer id="footer">
+
+   <div class="footer-container">
+     <section class='orari'>
+       <header>
+         <h3 class="titolo">Orari di Apertura</h3>
+       </header>
+
+       <!-- Lista non Ordinata -->
+       <ul class="orari-ul">
+         <li> Mar - Gio: <time>19:00</time> - <time>00:00</time></li>
+         <li> Ven - Sab - Dom: <time>19:00</time> - <time>02:00</time></li>
+         <li> Lunedi Riposo</li>
+       </ul>
+     </section>
+
+
+
+     <section class='indirizzo'>
+       <header>
+         <h3 class="titolo">Dove Siamo</h3>
+       </header>
+       <!-- Indirizzo -->
+       <address>
+         Via del Rosso, 45<br>
+         Roma 00001<br>
+         tel. 0606060606<br>
+         <!-- mailto si utilizza per inviare le mail -->
+         <a href="mailto:indirizzo@email.com">pizzeriadamario@email.com</a>
+       </address>
+     </section>
+
+   </div>
+
+    <small>©2021 HTML by <a href="https://giorgiopiccardo.com/"> Giorgio Piccardo </a> & CSS by <a href="#"> Olga Senakosava </a> & icons by <a href="https://thenounproject.com/grega.cresnar/"> Gregor Cresnar </a> and <a href="https://thenounproject.com/Damadam/"> Dam </a> </small>
+  </footer>
+
+
+</body>
+</html>

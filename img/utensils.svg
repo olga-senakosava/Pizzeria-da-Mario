@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   data-name="Layer 1"
+   viewBox="0 0 100 100"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="utensils.svg"
+   width="100"
+   height="100"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="6.256"
+     inkscape:cx="50.031969"
+     inkscape:cy="41.240409"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <title
+     id="title2">Artboard 17</title>
+  <g
+     id="g8"
+     transform="matrix(1.7421447,0,0,1.7592711,-36.787541,-37.963555)">
+    <g
+       id="g911"
+       transform="matrix(0.95549067,0,0,1,0.97866608,0)">
+      <path
+         d="m 54,22 v 22 a 8,8 0 0 0 8,8 v 26 h 8 V 52 a 8,8 0 0 0 8,-8 V 22 H 70 V 44 H 62 V 22 Z"
+         id="path4" />
+      <path
+         d="m 30,62 h 8 a 8,8 0 0 0 8,-8 V 39.66 A 17.66,17.66 0 0 0 28.34,22 H 22 v 56 h 8 z m 0,-31.86 a 9.66,9.66 0 0 1 8,9.52 V 54 h -8 z"
+         id="path6" />
+      <path
+         style="fill:#2d1f17;fill-rule:evenodd;stroke:#2d1f17;stroke-width:0.276072;stroke-linecap:round;stroke-linejoin:round"
+         d="M 62,64.999909 V 52.018354 l -0.286728,-0.05679 c -0.157699,-0.03123 -0.419472,-0.05678 -0.581715,-0.05678 -0.99308,0 -3.126509,-0.890578 -4.160682,-1.736834 -1.229782,-1.006325 -2.244127,-2.588734 -2.701528,-4.21447 L 54.06484,45.226604 54.038826,33.619299 54.012812,22.011993 H 58.006406 62 V 33.005997 44 h 3.991244 3.991244 V 33.005997 22.011993 h 3.991244 3.991244 v 11.386184 c 0,7.55644 -0.03244,11.567521 -0.09643,11.925314 -0.316655,1.770377 -1.168589,3.322597 -2.487062,4.531417 -1.362638,1.249313 -2.784078,1.851253 -4.96317,2.101762 l -0.435826,0.05011 V 64.994121 77.981467 H 65.991244 62 Z"
+         id="path1034" />
+      <path
+         style="fill:#2d1f17;fill-rule:evenodd;stroke:#2d1f17;stroke-width:0.483316;stroke-linecap:round;stroke-linejoin:round"
+         d="M 1.5185422,50.031969 V 0.79923274 h 6.4001621 c 6.8387177,0 8.4622207,0.10622918 11.3241317,0.74096156 11.831923,2.6241574 20.741111,11.7683377 23.470631,24.0897047 l 0.430568,1.94363 0.0594,15.425192 c 0.04418,11.473092 0.01044,15.711874 -0.131706,16.544118 -0.447249,2.61867 -1.704324,5.110774 -3.567265,7.071966 -1.938872,2.041129 -4.085852,3.336309 -6.735921,4.063489 -1.220703,0.334962 -1.643521,0.353806 -9.311061,0.414981 l -8.032289,0.06409 V 85.211033 99.264706 H 8.471867 1.5185422 Z M 29.491237,44.157609 C 29.490918,35.728454 29.429618,30.750854 29.314488,29.811381 28.419746,22.510137 23.077142,16.635921 15.944693,15.111227 l -0.519501,-0.111053 v 21.032521 21.032522 h 7.033248 7.033248 l -4.8e-4,-12.907608 z"
+         id="path1073"
+         transform="matrix(0.57400513,0,0,0.56841723,21.116237,21.579139)" />
+    </g>
+  </g>
+  <metadata
+     id="metadata835">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Artboard 17</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

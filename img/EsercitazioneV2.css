@@ -1,0 +1,282 @@
+body {
+  background-color:rgb(90,10,5);
+}
+
+
+#fixed {
+  position:fixed;
+  margin:0;
+  padding:0;
+  top:0;
+  right:0;
+  left:0;
+  font-size:4vw;
+  text-align:center;
+  color:black;
+  z-index:+1;
+  background-color: rgb(150,20,0);
+
+}
+
+#h2 {
+  text-align:right;
+  font-style:italic;
+  position:relative;
+  z-index:+2;
+  font-size:1.5vw;
+}
+
+#divhimg {
+  position:relative;
+  margin:0;
+}
+
+#himg {
+  width:100%;
+  height:660px;
+  opacity:0.9;
+  /*border-bottom:10px solid rgba(0,0,0,0.8);*/
+  padding:0;
+  margin:0;
+  object-fit:cover;
+}
+
+.lim {
+  list-style-type:none;
+}
+
+#limf {
+  position:absolute;
+  top:15%;
+  left:10%;
+}
+
+#limg {
+  position:absolute;
+  top:39%;
+  left:55%;
+}
+
+#limo {
+  position:absolute;
+  top:75%;
+  left:60%;
+}
+
+#limn {
+  position:absolute;
+  top:55%;
+  left:6%;
+}
+
+#limds {
+  position:absolute;
+  top:83%;
+  left:20%;
+}
+
+#limm {
+  position:absolute;
+  top:10%;
+  left:77%;
+}
+
+.lim a {
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+  text-align:center;
+  font-size:3vw;
+  padding:7px;
+  background-color:rgba(180,30,0,0.5);/*rgba(230, 77, 0,0.5)*/
+  border-radius:45%;
+  border-style:hidden;
+}
+
+.lim a:hover{
+  background-color:rgb(179, 0, 0);
+  padding:10px;
+  border:10px solid rgb(255, 191, 128);
+  border-radius:42%;
+  text-align:center;
+  color:rgb(249, 247, 246);
+  font-family:cursive;
+  font-size:2.7vw;
+  cursor:grab;
+}
+
+
+blockquote {
+  font-size:35px;
+  font-style: italic;
+  float:right;
+  border-width:3px;
+  border-style:solid;
+  border-color:rgba(0,0,0,0);
+  margin-bottom:50px;
+
+}
+
+blockquote a {
+  color:black;
+  text-decoration:none;
+}
+
+blockquote:hover {
+  background-color:rgba(244,244,244,0.2);
+  border-style:solid;
+  border-width:3px 0px;
+  border-color:rgba(0,0,0,0.4);
+  cursor:help;
+  margin-bottom:50px;
+}
+
+blockquote a:hover {
+  cursor:help;
+}
+
+.titolo {
+  background-color:rgba(1,1,1,0.9);
+  color:rgb(193, 58, 31);
+  font-size:40px;
+  text-align:center;
+  padding:50px 10px 10px 10px;
+}
+
+
+
+#filosofia {
+  clear:right;
+}
+
+#immagini {
+  display:flex;
+  flex-flow:row wrap;
+  position:center;
+}
+
+
+
+figure {
+  border: 6px;
+  border-color:black;
+  border-style:double;
+  border-radius:2%;
+  padding: 1px 1px 10px 1px;
+  background-color:rgba(40,5,3,0.8);
+
+}
+
+figure:hover {
+  padding:1px 1px 10px 1px;
+  border: 6px;
+  border-color:rgba(10,1,1,0.9);
+  border-style:double;
+  border-radius:2%;
+  background-color: rgba(40,5,3,0.1);
+}
+
+figcaption {
+  text-align:center;
+  color:rgba(250,200,200,0.7);
+  font-size:22px;
+  padding-top:15px;
+}
+
+
+#orari li{
+  /*list-style-image:url(img/utensils-solid.svg);*/
+  list-style-type:none;
+}
+
+#flexnews {
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.fnews {
+  margin:20px 5px;
+  padding:5px 5px 5px 2px;
+  border:1px dashed rgba(0,0,0,0.4);
+  width:395px;
+}
+
+.newsh {
+  background-color:rgba(2,2,2,0.8);
+  color:rgb(255, 125, 102);
+  font-size:28px;
+  width:65%;
+  padding:1px 50px;
+  outline-style:solid;
+  outline-width:9px;
+  outline-color:rgba(2,2,2,0.8);
+  border-top-left-radius:20%;
+  border-bottom-right-radius:15%;
+  border-color:rgba(2,2,2,0.83);
+}
+
+.newsp {
+  font-size:22px;
+  padding:5px;
+}
+
+.contenuto {
+  font-size:25px;
+  padding:50px 200px;
+}
+
+#filosofia, #galleria, #orari, #news, #indirizzo {
+  background-color:rgba(255, 133, 102, 0.55);
+}
+
+#filosofia:hover, #galleria:hover, #orari:hover, #news:hover, #indirizzo:hover{
+  background-color:rgba(255, 133, 102, 0.9);
+}
+
+#email {
+  text-decoration:none;
+  color:maroon;
+  padding:5px;
+}
+
+#email:hover {
+  color:rgba(40,5,3,0.8);
+  border-width:2px 0;
+  border-style:solid;
+  border-color:rgba(40,5,3,0.8);
+  border-radius:30%;
+  padding:4px;
+}
+
+
+#media {
+  background-color:black;
+}
+iframe {
+  height:570px;
+  width:100%;
+}
+
+#manina {
+  padding:3px;
+  text-align:center;
+  font-size:25px;
+  font-weight:bolder;
+  font-family:cursive;
+}
+
+#manina a {
+  color:rgb(90,10,5);
+  text-decoration:none;
+}
+
+#manina a:hover {
+  color:rgba(5,5,5,0.6);
+  font-size:25px;
+  font-weight:bolder;
+  font-family:cursive;
+}
+
+footer {
+  text-align:right;
+}

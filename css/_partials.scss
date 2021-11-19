@@ -1,0 +1,18 @@
+@mixin menuSimple() {
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: $orange;
+}
+
+@mixin fontSizeTitle() {
+  font-size: 50px;
+  font-family: fantasy;
+  font-weight: normal;
+}
+
+
+@mixin fontSizeContent() {
+  font-size: 15px;
+  font-family: "Cairo", sans-serif;
+
+}
