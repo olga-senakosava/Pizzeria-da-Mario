@@ -2,7 +2,11 @@
 
 @import "_partials.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;692;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@692&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
+
 
 $dark-brown: #2D1F17;
 $red-brown: #703110;
@@ -334,7 +338,7 @@ body {
 
   .news-all {
     text-align: center;
-    margin-top: -17px;
+    margin-top: -20px;
 
     button {
 
@@ -556,4 +560,8 @@ small {
   padding-top: 0;
   margin: 10px auto;
   animation: contentAppear 5s;
+
+  a {
+    margin: 0 4px;
+  }
 }
