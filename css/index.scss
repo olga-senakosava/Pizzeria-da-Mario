@@ -2,6 +2,8 @@
 
 @import "_partials.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;692;700&display=swap');
+
 $dark-brown: #2D1F17;
 $red-brown: #703110;
 $grey-brown: #634F40;
@@ -208,9 +210,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     font-family: "Cairo", sans-serif;
-    font-weight: normal;
+    font-weight: 700;
     padding: 500px 30px 100px 30px;
     background-color: rgba(18, 12, 9, 0.5);
     width: 100%;
@@ -332,7 +334,7 @@ body {
 
   .news-all {
     text-align: center;
-    margin-top: -15px;
+    margin-top: -17px;
 
     button {
 

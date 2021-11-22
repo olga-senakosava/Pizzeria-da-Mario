@@ -4,10 +4,6 @@
 @import 'index.scss';
 @import "_partials.scss";
 
-@font-face {
-  font-family: "Cairo", sans-serif;
-  src: url("../fonts/Cairo/static/Cairo-Bold.ttf");
-}
 
 .menu-simple {
   @include menuSimple;
