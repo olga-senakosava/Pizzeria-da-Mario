@@ -1,7 +1,7 @@
 @import "_partials.scss";
 @import 'index.scss';
 
-@media only screen and (max-width: 1063) {
+@media screen and (max-width: 1063) {
   .menu-li {
     display: none;
     a {
