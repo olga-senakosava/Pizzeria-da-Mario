@@ -1,7 +1,6 @@
 // filosofia.scss
 
 
-
 @import 'index.scss';
 @import "_partials.scss";
 
@@ -13,6 +12,7 @@
 .menu-simple {
   @include menuSimple;
 }
+
 
 .filosofia {
   margin-top: 150px;

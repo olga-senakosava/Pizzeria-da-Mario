@@ -8,10 +8,7 @@ $grey-brown: #634F40;
 $beige: #BAA17D;
 $orange: #CA5312;
 
-@font-face {
-  font-family: "Cairo", sans-serif;
-  src: url("../fonts/Cairo/static/Cairo-Bold.ttf");
-}
+
 
 * {
   margin: 0;
@@ -19,7 +16,6 @@ $orange: #CA5312;
   box-sizing: border-box;
   color: $beige;
   font-family: "Cairo", sans-serif;
-
 }
 
 body {
@@ -112,8 +108,8 @@ body {
         &:hover {
           border-color: $beige;
         }
-
       }
+
 
       .menu-filosofia:hover::after {
         transform: scaleX(0.88);
@@ -133,6 +129,54 @@ body {
 
       .menu-faidate:hover::after {
         transform: scaleX(0.77);
+      }
+
+
+
+
+
+      .home-active::after {
+        transform: scaleX(0.67);
+      }
+
+      .home-active:hover::after {
+        transform: scaleX(0);
+      }
+
+
+      .filosofia-active::after {
+        transform: scaleX(0.85);
+      }
+
+      .filosofia-active:hover::after {
+        transform: scaleX(0);
+      }
+
+
+      .pizze-active::after {
+        transform: scaleX(0.88);
+      }
+
+      .pizze-active:hover::after {
+        transform: scaleX(0);
+      }
+
+      .news-active::after {
+        transform: scaleX(0.67);
+      }
+
+      .news-active:hover::after {
+        transform: scaleX(0);
+      }
+
+
+      .faidate-active::after {
+        transform: scaleX(0.77);
+      }
+
+
+      .faidate-active:hover::after {
+        transform: scaleX(0);
       }
 
     }
@@ -303,25 +347,10 @@ body {
         font-size: 20px;
         font-weight: bold;
         color: $dark-brown;
-        transition: all 0.3s;
 
         &::after {
           content: '\00BB';
           padding: 5px;
-
-        }
-
-        &:hover {
-          color: transparent;
-          text-align: left;
-          letter-spacing: -0.5em;
-          padding: 5px 50px;
-
-        }
-
-        &:hover::after {
-          color: $dark-brown;
-          padding: 5px 20px;
         }
       }
     }

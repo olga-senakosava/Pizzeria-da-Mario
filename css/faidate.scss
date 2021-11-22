@@ -1,0 +1,42 @@
+@import 'index.scss';
+@import "_partials.scss";
+@import "pizze.scss";
+
+.menu-simple {
+  @include menuSimple;
+}
+
+
+.media {
+  margin-top: 150px;
+  width: 100%;
+  text-align: center;
+
+
+  header {
+    h3 {
+      @include fontSizeTitle;
+      animation: pizzaTitleAppear 1s;
+      text-align: center;
+    }
+  }
+
+  iframe {
+    margin-top: 30px;
+    width: 80%;
+    height: 500px;
+    animation: iframeAppear 1s;
+
+    @keyframes iframeAppear {
+      from {
+        opacity: 0;
+        margin-bottom: -100px;
+      }
+
+      to {
+        opacity: 1;
+        margin-top: 30px;
+      }
+    }
+  }
+}
