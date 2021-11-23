@@ -90,7 +90,9 @@ body {
       padding: 20px;
 
       .icon {
-        display: none;
+        position: absolute;
+        top: 0;
+        right: 100%;
       }
 
       a {
