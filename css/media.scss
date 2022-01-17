@@ -1,17 +1,637 @@
 @import "_partials.scss";
-@import 'index.scss';
+@import "index.scss";
 
-@media screen and (max-width: 1063) {
-  .menu-li {
-    opacity: 0;
-    a {
+
+
+@media screen and (max-width: 1100px) {
+
+
+  .menu {
+    position: relative;
+    @include menuSimple;
+
+
+    .logo-div {
+
+      a {
+
+        img {
+        }
+      }
+
+    }
+
+
+
+
+    .burger {
+      position: absolute;
+      top: 30%;
+      right: 5%;
+      display: block;
+      cursor: pointer;
+
+
+      i {
+        font-size: 30px;
+
+      }
+    }
+
+
+    .menu-div.show {
+      display: flex;
+    }
+
+    .menu-div {
+
+      display: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 30px 0;
+      position: absolute;
+      top: 349%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      background-color: rgba(0,0,0,0.9);
+      border-top: 5px solid $orange;
+
+
+        a {
+          width: 100%;
+          text-align: center;
+          color: $beige;
+          font-size: 17px;
+          padding: 15px 0;
+          margin: 10px 0;
+          transition: color 0.3s;
+          border-left: 1px solid transparent;
+          border-right: 1px solid transparent;
+
+          transition: border 0.3s;
+
+          &:hover {
+            border-left: 7px solid $beige;
+            border-right: 7px solid $beige;
+
+          }
+
+          &::after {
+            border: none;
+          }
+
+        }
+
+        .home-active, .filosofia-active, .pizze-active, .news-active {
+          border-left: 7px solid $beige;
+          border-right: 7px solid $beige;
+
+          &:hover {
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+
+          }
+        }
+
 
     }
   }
 
-  .icon {
-    display: block;
-    top: 0;
-    right: 0;
+
+
+
+  .cover {
+
+    .header-img {
+      filter: brightness(50%);
+      animation: imgAppear 1.5s;
+    }
+
+    @keyframes imgAppear {
+      from{
+        filter: brightness(0%);
+      }
+
+      to {
+        filter: brightness(50%);
+      }
+    }
+
+    h2 {
+      top: 40%;
+      font-size: 40px;
+      padding: 0px;
+      background: none;
+      animation: titleAppear 1s;
+
+    }
+
+    @keyframes titleAppear {
+      from {
+        top: -15%;
+        opacity: 0%;
+      }
+      to {
+        top: 40%;
+        opacity: 100%;
+      }
+    }
+
+
+
+    button {
+
+      a {
+        font-size: 35px;
+        padding: 20px 40px;
+        transition: all 0.3s;
+        animation: buttonAppear 1s;
+
+
+        &:hover {
+          background-image: url('../img/pizza.svg');
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-size: 60px;
+          background-position: center;
+          color: transparent;
+          border: 5px solid $orange;
+          background-color: rgba(186, 161, 125, 0.8);
+
+        }
+      }
+
+      @keyframes buttonAppear {
+        from {
+          padding: 0;
+          font-size: 0;
+        }
+        to {
+          padding: 20px 40px;
+          font-size: 35px;
+        }
+      }
+    }
   }
+
+
+  .immagini {
+
+    figure {
+
+          a {
+
+            &:hover img {
+
+            }
+
+            &:hover figcaption {
+              font-size: 30px !important;
+            }
+
+            img {
+            }
+
+            figcaption {
+              font-size: 0px;
+            }
+          }
+
+    }
+
+  }
+
+  .news {
+
+    .news-articles {
+      padding: 20px 20px 50px 20px;
+      .news-item {
+        width: 100% !important;
+        padding: 10px !important;
+
+
+
+
+        h4 {
+          font-size: 25px !important;
+
+        }
+
+        .news-content {
+          @include fontSizeContent;
+
+        }
+      }
+    }
+
+
+  }
+
+
+  .news-all {
+  }
+
+
+
+
+          /*  FILOSOFIA  */
+
+  .filosofia {
+    margin-top: 100px;
+
+    .filosofia-content {
+      margin: 0 20px 0 50px;
+      flex:1;
+
+
+      header {
+
+        h3 {
+        }
+      }
+
+
+      .contenuto {
+      }
+    }
+
+    .filosofia-img {
+
+
+      img {
+        width: 50vw;
+        object-fit: cover;
+      }
+
+      .filosofia-img-blockquote {
+
+        &:hover {
+        }
+
+        &:hover a {
+        }
+
+        blockquote {
+          a {
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 950px) {
+
+
+       /*  FILOSOFIA  */
+
+  .filosofia {
+    margin-top: 50px;
+    flex-wrap: wrap !important;
+    justify-content: center;
+
+    .filosofia-content {
+      width: 100% !important;
+      margin: 0 20px;
+
+
+
+      header {
+
+        h3 {
+        }
+      }
+
+
+      .contenuto {
+      }
+    }
+
+    .filosofia-img {
+      width: 100%;
+
+
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .filosofia-img-blockquote {
+        top: 48%;
+
+        &:hover {
+          padding: 50px 0;
+        }
+
+        &:hover a {
+          font-size: 29px;
+        }
+
+        blockquote {
+          a {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+
+  .cover {
+
+    .header-img {
+      height: 530px;
+      object-fit: cover;
+    }
+
+
+    h2 {
+      font-size: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+    }
+
+
+    button {
+
+      a {
+        font-size: 25px;
+        padding: 20px 40px;
+        transition: all 0.3s;
+        animation: buttonAppear 1s;
+
+
+        &:hover {
+          background-size: 40px;
+        }
+      }
+
+      @keyframes buttonAppear {
+        from {
+          padding: 0;
+          font-size: 0;
+        }
+        to {
+          padding: 20px 40px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+
+
+  .news {
+
+    padding: 40px 40px 100px 40px;
+    header {
+
+      h3 {
+        @include fontSizeTitleMobile;
+      }
+    }
+
+    .news-articles {
+
+      .news-item {
+
+        h4 {
+        }
+
+        .news-content {
+        }
+      }
+    }
+
+    .news-all {
+
+      button {
+
+
+        a {
+
+          &::after {
+
+          }
+
+          &:hover::after {
+          }
+        }
+      }
+    }
+  }
+
+
+.pizze {
+  header {
+
+    h3 {
+      @include fontSizeTitleMobile;
+      font-weight: normal;
+      margin: 20px 40px;
+      text-align: center;
+
+    }
+}
+}
+
+
+       /*  FILOSOFIA  */
+
+  .filosofia {
+    margin-top: 50px;
+    flex-wrap: wrap !important;
+    justify-content: center;
+
+    .filosofia-content {
+      width: 100% !important;
+      margin: 0 20px;
+
+
+
+      header {
+
+        h3 {
+        }
+      }
+
+
+      .contenuto {
+      }
+    }
+
+    .filosofia-img {
+      width: 100%;
+
+
+      img {
+        width: 100%;
+      }
+
+      .filosofia-img-blockquote {
+
+        &:hover {
+        }
+
+        &:hover a {
+          font-size: 25px;
+
+        }
+
+        blockquote {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+
+     /*  PIZZE  */
+
+
+  .galleria {
+    margin-top: 70px;
+
+    header {
+
+      .titolo {
+
+      }
+    }
+
+    .immagini {
+
+      figure {
+
+        .imgpizza {
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+
+        }
+
+        figcaption {
+        }
+      }
+
+
+    }
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+
+       /*  FILOSOFIA  */
+
+  .filosofia {
+
+    .filosofia-content {
+      width: 100% !important;
+      margin: 0px !important;
+
+
+
+      header {
+
+        h3 {
+        }
+      }
+
+
+      .contenuto {
+      }
+    }
+
+    .filosofia-img {
+      width: 100%;
+
+
+      img {
+        width: 100%;
+      }
+
+      .filosofia-img-blockquote {
+
+        &:hover {
+        }
+
+        &:hover a {
+          font-size: 25px;
+
+        }
+
+        blockquote {
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .news {
+    padding: 0;
+    margin-bottom: 70px;
+
+    .news-articles {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+
+
+      .news-item {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+
+.pizze {
+  .immagini {
+    figure {
+      width: 100%;
+
+      img {
+        width: 100% !important;
+        height: 300px !important;
+
+      }
+
+    }
+  }
+}
+
+
+
+small {
+
+  a {
+    margin: 0px;
+  }
+}
+
+
 }

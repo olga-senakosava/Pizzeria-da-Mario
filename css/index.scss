@@ -1,6 +1,5 @@
-//_index.scss
-
 @import "_partials.scss";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@692&display=swap');
@@ -24,9 +23,36 @@ $orange: #CA5312;
   font-family: "Cairo", sans-serif;
 }
 
+
+
+::-webkit-scrollbar {
+  width: 13px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $orange;
+
+  &:hover {
+    background: $beige;
+  }
+}
+
+
+
+
+
 body {
   background-color: $dark-brown;
+  overflow-x: hidden;
 }
+
+
+
 
 .menu {
   display: flex;
@@ -40,6 +66,7 @@ body {
   width: 100%;
   animation: menuAppear 1.5s;
 
+
   @keyframes menuAppear {
     from {
       opacity: 0%;
@@ -50,30 +77,17 @@ body {
     }
   }
 
-  .menu-ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-right: 20px;
 
-    .logo {
-      padding: 10px;
-      margin-top: 10px;
-      margin-left: 10px;
-      transform: translateX(0%);
-      left: 0%;
-      animation: logoAppear 1s;
-      list-style-type: none;
+  .logo-div {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transform: translateX(0%);
+    left: 0%;
+    animation: logoAppear 1s;
 
-      @keyframes logoAppear {
-        from {
-          transform: translateX(-100%);
-        }
-
-        to {
-          transform: translateX(0%);
-        }
-      }
+    a {
+      text-decoration: none;
 
       img {
         height: 45px;
@@ -81,118 +95,129 @@ body {
         transition: 0.3s;
         object-fit: cover;
       }
-
     }
 
 
-    .menu-li {
-      list-style-type: none;
+    @keyframes logoAppear {
+      from {
+        transform: translateX(-100%);
+      }
+
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+  }
+
+
+
+
+  .burger {
+    position: absolute;
+    top: 0;
+    right: 80%;
+    display: none;
+
+  }
+
+  .menu-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+
+    a {
+      text-decoration: none;
+      font-family: fantasy;
+      font-size: 17px;
+      letter-spacing: .05em;
+      padding: 20px 0;
+      margin-left: 20px;
+      margin-right: 20px;
       padding: 20px;
+      transition: color 0.3s;
 
-      .icon {
-        position: absolute;
-        top: 0;
-        right: 100%;
-      }
+      &::after {
+        display:block;
+        content: '';
+        border-bottom: solid 7px $beige;
+        transform: scaleX(0) !important;
 
-      a {
-        text-decoration: none;
-        font-family: fantasy;
-        font-size: 17px;
-        letter-spacing: .05em;
-        padding: 20px 0;
-        margin-left: 20px;
-        margin-right: 20px;
-        transition: color 0.3s;
-
-        &::after {
-          display:block;
-          content: '';
-          border-bottom: solid 7px $beige;
-          transform: scaleX(0);
-
-          transition: transform 250ms ease-in-out;
-          transform-origin:  100% 0%;
-        }
-
-
-        &:hover {
-          border-color: $beige;
-        }
+        transition: transform 250ms ease-in-out;
+        transform-origin:  100% 0%;
       }
 
 
-      .menu-filosofia:hover::after {
-        transform: scaleX(0.88);
+      &:hover {
+        border-color: $beige;
       }
 
-      .menu-pizze:hover::after {
-        transform: scaleX(0.85);
+      &:hover::after {
+        transform: scaleX(1) !important;
+
       }
-
-      .menu-news:hover::after {
-        transform: scaleX(0.67);
-      }
-
-      .menu-contatti:hover::after {
-        transform: scaleX(0.76);
-      }
-
-      .menu-faidate:hover::after {
-        transform: scaleX(0.77);
-      }
-
-
-
-
-
-      .home-active::after {
-        transform: scaleX(0.67);
-      }
-
-      .home-active:hover::after {
-        transform: scaleX(0);
-      }
-
-
-      .filosofia-active::after {
-        transform: scaleX(0.85);
-      }
-
-      .filosofia-active:hover::after {
-        transform: scaleX(0);
-      }
-
-
-      .pizze-active::after {
-        transform: scaleX(0.88);
-      }
-
-      .pizze-active:hover::after {
-        transform: scaleX(0);
-      }
-
-      .news-active::after {
-        transform: scaleX(0.67);
-      }
-
-      .news-active:hover::after {
-        transform: scaleX(0);
-      }
-
-
-      .faidate-active::after {
-        transform: scaleX(0.77);
-      }
-
-
-      .faidate-active:hover::after {
-        transform: scaleX(0);
-      }
-
     }
+
+
+/*    .menu-filosofia:hover::after {
+      transform: scaleX(0.88);
+    }
+
+    .menu-pizze:hover::after {
+      transform: scaleX(0.85);
+    }
+
+    .menu-news:hover::after {
+      transform: scaleX(0.67);
+    }
+
+    .menu-contatti:hover::after {
+      transform: scaleX(0.76);
+    }*/
+
+
+
+
+
+    .home-active::after {
+      transform: scaleX(1) !important;
+    }
+
+    .home-active:hover::after {
+      transform: scaleX(0);
+    }
+
+
+    .filosofia-active::after {
+      transform: scaleX(1) !important;
+    }
+
+    .filosofia-active:hover::after {
+      transform: scaleX(0);
+    }
+
+
+    .pizze-active::after {
+      transform: scaleX(1) !important;
+    }
+
+    .pizze-active:hover::after {
+      transform: scaleX(0);
+    }
+
+    .news-active::after {
+      transform: scaleX(1) !important;
+    }
+
+    .news-active:hover::after {
+      transform: scaleX(0);
+    }
+
   }
 }
+
+
 
 .cover {
   position: relative;
@@ -223,7 +248,7 @@ body {
     font-family: "Cairo", sans-serif;
     font-weight: 700;
     padding: 500px 30px 100px 30px;
-    background-color: rgba(18, 12, 9, 0.5);
+    background-color: rgba(18, 12, 9, 0.65) !important;
     width: 100%;
     animation: titleAppear 1s;
     opacity: 100%;
@@ -263,6 +288,7 @@ body {
       transition: all 0.3s;
       border: 0px solid transparent;
       @include fontSizeTitle;
+      white-space: nowrap;
 
       &:hover {
         background-image: url('../img/pizza.svg');
@@ -380,7 +406,6 @@ body {
   animation: contentAppear 3s;
 
 
-
   header {
 
     h3 {
@@ -393,10 +418,11 @@ body {
   }
   .immagini {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    width: 100%;
+    width: 100% !important;
+    object-fit: cover;
 
 
     figure {
@@ -416,22 +442,24 @@ body {
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
+              font-weight: bold;
               color: $orange;
               width: 100%;
 
             }
 
             img {
-              width: 32.77vw;
-              height: 32.77vw;
+              width: 31vw;
+              height: 31vw;
               object-fit:cover;
               transition: 0.3s;
+              margin: 1px;
             }
 
             figcaption {
               position: absolute;
-              top: 100%;
-              left: 100%;
+              top: 50%;
+              left: 50%;
               transform: translate(-50%, -50%);
               text-decoration: none;
               font-family: "Cairo", sans-serif;
@@ -458,6 +486,8 @@ body {
 
   .orari {
     align-self: flex-start;
+    margin-left: 30px;
+    margin-bottom: 50px;
 
     header {
       h3 {
@@ -506,6 +536,8 @@ body {
 
   .indirizzo {
     align-self: flex-start;
+    margin-left: 30px;
+
 
     header {
       h3 {
@@ -560,11 +592,10 @@ body {
 small {
   color: $beige;
   text-align: center;
-  display: flex;
-  justify-content:center;
   padding-top: 0;
   margin: 10px auto;
   animation: contentAppear 5s;
+  white-space: wrap;
 
   a {
     margin: 0 4px;

@@ -10,6 +10,12 @@
   font-weight: normal;
 }
 
+@mixin fontSizeTitleMobile() {
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: normal;
+}
+
 
 @mixin fontSizeContent() {
   font-size: 15px;

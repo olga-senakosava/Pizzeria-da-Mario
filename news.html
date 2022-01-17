@@ -14,30 +14,43 @@
 
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/index.js"></script>
+
+
     <link rel="shortcut icon" type="image/jpg" href="img/DA MARIO logo - quadrato.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
   </head>
   <body>
 
     <!-- Barra di Navigazione -->
 
-    <nav class="menu menu-simple">
-      <ul class="menu-ul">
-        <li class="logo"><a href="index.html"><img src="img/DA MARIO logo.svg" alt="logo"></a></li>
-      </ul>
+    <nav class="menu topnav menu-simple">
+      <div class="logo-div">
+        <a href="index.html"><img src="img/DA MARIO logo.svg" alt="logo"></a>
+      </div>
 
-      <ul class="menu-ul">
-      <li class="menu-li"><a class="menu-home" href='index.html'> HOME</a></li>
-      <li class="menu-li"><a class="menu-filosofia" href='filosofia.html'> LA NOSTRA FILOSOFIA</a></li>
-      <li class="menu-li"><a class="menu-pizze" href='pizze.html'> LE NOSTRE PIZZE</a></li>
-      <li class="menu-li"><a class="menu-news news-active" href='news.html'> NEWS</a></li>
-      <li class="menu-li"><a class="menu-contatti" href='#footer'> CONTATTI</a></li>
-      <li class="menu-li"><a class="menu-faidate" href='faidate.html'> FAI DA TE!</a></li>
-    </ul></nav>
+
+      <a class="burger" id="burger" onclick="openMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+
+      <div id="menu-id" class="menu-div">
+        <a class="menu-home" href='index.html'>HOME</a>
+        <a class="menu-filosofia" href='filosofia.html'> LA NOSTRA FILOSOFIA</a>
+        <a class="menu-pizze" href='pizze.html'> LE NOSTRE PIZZE</a>
+        <a class="menu-news news-active" href='news.html'> NEWS</a>
+        <a class="menu-contatti" href='#footer'> CONTATTI</a>
+      </div>
+    </nav>
 
 
     <section class='news'>
